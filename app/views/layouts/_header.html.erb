@@ -1,0 +1,24 @@
+<header>
+	<div id="nav" class="row">
+		<% if signed_in? %>
+			<div class="column grid_2">
+		  	<%= link_to "My Webmarks", webmarks_path %>
+			</div>
+			<div class="column grid_2">
+			  <%= link_to "All Webmarks", all_webmarks_webmarks_path %>
+			</div>
+			<div class="column grid_2user">
+			
+			  	<div id="user-bar-greeting">
+						Hi, 
+						<p id="username"><%= current_user.login  %></p>
+						(<%= link_to "Log out", logout_path, { :title => "Log out" }    %>)
+					</div>
+
+				
+			</div>
+		<% else %>
+			
+		<% end %>
+	</div>
+</header>

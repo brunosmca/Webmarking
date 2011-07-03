@@ -1,0 +1,106 @@
+.column grid_2user {
+	text-align: right;
+}
+
+#user-bar-greeting {
+	font-size: 80%;
+	color: #999999;
+	text-align: right;
+	display:inline;	
+}
+#user-bar-action{
+	font-size: 80%;
+	
+}
+
+#username{
+	color:#fff;
+	display:inline;
+}
+
+.wbkstable{
+	font-size: 90%;
+}
+
+#userbar{
+	
+}
+
+.wbks {
+	padding-left: 28px;
+}
+.categories {
+	padding-left: 12px;
+}
+
+#content h1 {
+	font-size: 150%;
+}
+#content h2 {
+	font-size: 120%;
+	padding-left:12px;
+}
+#nav p{
+	color: #0099f;
+}
+#header {
+	text-align: center;
+	color: #cc9966;
+}
+header {
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+
+#pagelist {
+	list-style-type: none;
+}
+#pagelist li{
+	display: inline;
+	padding: 20px;
+}
+
+
+/* ERRORS */
+.field_with_errors {
+  margin-top: 10px;
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+.field_with_errors label {
+  color: #fff;
+}
+
+#error_explanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -2px;
+  background-color: #c00;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}

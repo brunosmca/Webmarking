@@ -1,0 +1,41 @@
+<h1> All Webmarks </h1>
+</br>
+<% Webmark::CATEGORIES.each do |category| %>
+	<% @webmarks = find_all_webmarks(category) %>
+	
+	<% if !@webmarks.empty? %>
+		<h2><%= category %> </h2>
+		<% @webmarks.each do |webmark| %>
+			<div class='wbks'>
+				<p>
+				  <b>Link:</b>
+				  <a href='<%= webmark.link %>'><%= webmark.link %></a></td>
+				</p>
+
+				<p>
+				  <b>Category:</b>
+				  <%= webmark.category %>
+				</p>
+
+				<p>
+				  <b>Title:</b>
+				  <%= webmark.title %>
+				</p>
+
+				<p>
+				  <b>Description:</b>
+				  <%= webmark.description %>
+				</p>
+
+				<p>
+					<b>Marked by:</b>
+					<%= getUserName(webmark.user_id)%>
+				</p>
+		    
+				<br/>
+			</div>
+		<% end %>
+	<% end %>
+<% end %>
+
+<%= link_to 'New Webmark', new_webmark_path %>

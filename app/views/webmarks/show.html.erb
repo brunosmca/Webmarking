@@ -1,0 +1,34 @@
+
+<p>
+  <b>Link:</b>
+  <a href='<%= @webmark.link %>'><%= @webmark.link %></a></td>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @webmark.category %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @webmark.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @webmark.description %>
+</p>
+
+<p>
+  <b>Public:</b>
+  <% if @webmark.public %>
+	  <%= 'Yes' %>
+	<% else %>
+	  <%= 'No' %>
+	<% end %>
+</p>
+<br/>
+
+
+<%= link_to 'Edit', edit_webmark_path(@webmark) %> |
+<%= link_to 'Back', webmarks_path %>
